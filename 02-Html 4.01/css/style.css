@@ -1,0 +1,17 @@
+div.box{
+    background-color: #0a94a7;
+    border: 4px solid #03c97d;
+    border-radius: 130px;
+    color: #fff;
+    height: 250px;
+    font-size: 4em;
+    line-height: 4em;
+    margin: 200px auto;
+    text-align: center;
+    transition: all 0.5s;
+    width: 250px;
+}
+div.box:hover{
+    background-color: darkblue;
+    border: 4px solid #ob56ac;
+    transform: scale(1.5) rotate(360deg);
