@@ -1,41 +1,42 @@
 * {
     transition: all 1s ease-out;
 }
-.container {
+.contenedor {
     margin: 0px;
     background-color: #F6F6F6;
 }
-div.header {
+div.encabezado {
     margin: 5px auto;
     padding: 0;
 }
-div.logoAc {
+div.logo {
     margin: 20px -84px;
     text-align: center;
-    transform: scale(.5);
+    transform: scale(.3);
 }
 @media (min-width: 720px) {
-    div.logoAc {
-        transform: scale(.8)
+    div.logo {
+        transform: scale(.5)
     }
 }
 @media (min-width: 1024px) {
-    div.logoAc {
-        transform: scale(1)
+    div.logo {
+        transform: scale(.7)
     }
 }
-div.images div.altair {
+
+div.imagenes div.gokuBebe {
     margin: 20px auto;
     border: 1px solid #000;
     width: 200px;
     height: 300px;
-    background: url(../imgs/Challenge_responsive/altair.png) no-repeat center;
+    background: url(../imgs/imagen\ 1.jpg) no-repeat center;
     background-size: contain;
     text-align: center;
     position: relative;
     border-radius: 5px;
 }
-div.images div.altair div.boxheader {
+div.imagenes div.gokuBebe div.cajaEncabezado {
     height: 50px;
     border: 1px solid #000;
     z-index: 1;
@@ -48,30 +49,30 @@ div.images div.altair div.boxheader {
     margin: 248px -100px;
     width: 198px;
 }
-div.images div.altair div.boxheader a {
+div.imagenes div.gokuBebe div.cajaEncabezado a {
     text-decoration: none;
     color: #fff;
     line-height: 1em;
     z-index: 2;
 }
-div.images div.altair div.boxheader:hover {
+div.imagenes div.gokuBebe div.cajaEncabezado:hover {
     transition: all 1s ease-in;
     height: 100px;
     margin-top: 198px;
     line-height: 6em;
 }
-div.images div.ezio {
+div.imagenes div.vegettaBlue {
     margin: 20px auto;
     border: 1px solid #000;
     width: 200px;
     height: 300px;
-    background: url(../imgs/Challenge_responsive/Ezio_AC2.png) no-repeat center;
+    background: url(../imgs/imagen\ 2.jpg) no-repeat center;
     background-size: contain;
     text-align: center;
     position: relative;
     border-radius: 5px;
 }
-div.images div.ezio div.boxheader {
+div.imagenes div.vegettaBlue div.cajaEncabezado {
     height: 50px;
     border: 1px solid #000;
     z-index: 1;
@@ -84,30 +85,30 @@ div.images div.ezio div.boxheader {
     margin: 248px -100px;
     width: 198px;
 }
-div.images div.ezio div.boxheader a {
+div.imagenes div.vegettaBlue div.cajaEncabezado a {
     text-decoration: none;
     color: #fff;
     line-height: 1em;
     z-index: 2;
 }
-div.images div.ezio div.boxheader:hover {
+div.imagenes div.vegettaBlue div.cajaEncabezado:hover {
     transition: all .5s ease-in;
     height: 100px;
     margin-top: 198px;
     line-height: 6em;
 }
-div.images div.connor {
+div.imagenes div.gokuBlue {
     margin: 20px auto;
     border: 1px solid #000;
     width: 200px;
     height: 300px;
-    background: url(../imgs/Challenge_responsive/connor.png) no-repeat center;
+    background: url(../imgs/imagen\ 3.jpg) no-repeat center;
     background-size: contain;
     text-align: center;
     position: relative;
     border-radius: 5px;
 }
-div.images div.connor div.boxheader {
+div.imagenes div.gokuBlue div.cajaEncabezado {
     height: 50px;
     border: 1px solid #000;
     z-index: 1;
@@ -120,30 +121,30 @@ div.images div.connor div.boxheader {
     margin: 248px -100px;
     width: 198px;
 }
-div.images div.connor div.boxheader a {
+div.imagenes div.gokuBlue div.cajaEncabezado a {
     text-decoration: none;
     color: #fff;
     line-height: 1em;
     z-index: 2;
 }
-div.images div.connor div.boxheader:hover {
+div.imagenes div.gokuBlue div.cajaEncabezado:hover {
     transition: all .5s ease-in;
     height: 100px;
     margin-top: 198px;
     line-height: 6em;
 }
-div.images div.edward {
+div.imagenes div.vegettaBlue2 {
     margin: 20px auto;
     border: 1px solid #000;
     width: 200px;
     height: 300px;
-    background: url(../imgs/Challenge_responsive/EdwardOne.png) no-repeat center;
+    background: url(../imgs/imagen\ 4.jfif) no-repeat center;
     background-size: contain;
     text-align: center;
     position: relative;
     border-radius: 5px;
 }
-div.images div.edward div.boxheader {
+div.imagenes div.vegettaBlue2 div.cajaEncabezado {
     height: 50px;
     border: 1px solid #000;
     z-index: 1;
@@ -156,20 +157,20 @@ div.images div.edward div.boxheader {
     margin: 248px -100px;
     width: 198px;
 }
-div.images div.edward div.boxheader a {
+div.imagenes div.vegettaBlue2 div.cajaEncabezado a {
     text-decoration: none;
     color: #fff;
     line-height: 1em;
     z-index: 2;
 }
-div.images div.edward div.boxheader:hover {
+div.imagenes div.vegettaBlue2 div.cajaEncabezado:hover {
     transition: all .5s ease-in;
     height: 100px;
     margin-top: 198px;
     line-height: 2em;
 }
 @media (min-width: 720px) {
-    div.images div.altair, div.images div.ezio, div.images div.connor, div.images div.edward {
+    div.imagenes div.gokuBebe, div.imagenes div.vegettaBlue, div.imagenes div.gokuBlue, div.imagenes div.vegettaBlue2 {
         display: inline-block;
         margin: 10px 69px;
         text-align: center;
@@ -177,7 +178,7 @@ div.images div.edward div.boxheader:hover {
     }
 }
 @media (min-width: 1024px) {
-    div.images div.altair, div.images div.ezio, div.images div.connor, div.images div.edward {
+    div.imagenes div.gokuBebe, div.imagenes div.vegettaBlue, div.imagenes div.gokuBlue, div.imagenes div.vegettaBlue2 {
         display: inline-block;
         margin: 10px 23px;
         text-align: center;
@@ -186,17 +187,17 @@ div.images div.edward div.boxheader:hover {
     }
 }
 @media (min-width: 1300px) {
-    div.images {
+    div.imagenes {
         padding-top: 100px;
         padding-bottom: 100px;
     }
-    div.images div.altair, div.images div.ezio, div.images div.connor, div.images div.edward {
+    div.imagenes div.gokuBebe, div.imagenes div.vegettaBlue, div.imagenes div.gokuBlue, div.imagenes div.vegettaBlue2 {
         display: inline-block;
         margin: 10px 55px;
         text-align: center;
         position: relative;
     }
-    div.images div.altair div.boxheader:hover, div.images div.ezio div.boxheader:hover, div.images div.ezio div.boxheader:hover, div.images div.edward div.boxheader:hover {
+    div.imagenes div.gokuBebe div.cajaEncabezado:hover, div.imagenes div.vegettaBlue div.cajaEncabezado:hover, div.imagenes div.vegettaBlue div.cajaEncabezado:hover, div.imagenes div.vegettaBlue2 div.cajaEncabezado:hover {
         transition: all 1s ease-in;
         height: 100px;
         /margin-top: 100px;/
@@ -205,35 +206,35 @@ div.images div.edward div.boxheader:hover {
 }
 /* ==================================================================== */
 
-div#section div.group div.sectionBox {
+div#seccion div.grupoUno div.cajaSeccion {
     margin: 20px auto;
     display: block;
     font-family: Arial;
     text-align: center;
 }
-div#section div.groupEdward div.sectionBox div.edwardFace {
+div#seccion div.grupoUno div.cajaSeccion div.personaje1 {
     margin: 20px auto;
     border: 1px solid #000;
     width: 200px;
     height: 300px;
-    background: url(../imgs/Challenge_responsive/EdwardTwo.png) no-repeat center;
+    background: url(../imgs/imagen\ 11.jpg) no-repeat center;
     background-size: contain;
     text-align: center;
     position: relative;
     border-radius: 5px;
 }
-div#section div.groupEdward div.sectionBox div.text h1 {
+div#seccion div.grupoUno div.cajaSeccion div.texto h1 {
     text-align: center;
 }
-div#section div.groupEdward div.sectionBox div.text p {
+div#seccion div.grupoUno div.cajaSeccion div.texto p {
     text-align: center;
 }
 @media(min-width: 720px) {
-    div#section div.groupEdward div.sectionBox div.edwardFace {
+    div#seccion div.grupoUno div.cajaSeccion div.personaje1 {
         text-align: left;
         display: inline-block;
     }
-    div#section div.groupEdward div.sectionBox div.text {
+    div#seccion div.grupoUno div.cajaSeccion div.text {
         height: 300px;
         width: 527px;
         float: right;
@@ -242,7 +243,7 @@ div#section div.groupEdward div.sectionBox div.text p {
     }
 }
 @media (min-width: 1024px) {
-    div#section div.groupEdward div.sectionBox div.text {
+    div#seccion div.grupoUno div.cajaSeccion div.texto {
         height: 300px;
         width: 805px;
         text-align: left;
@@ -250,12 +251,12 @@ div#section div.groupEdward div.sectionBox div.text p {
     }
 }
 @media (min-width: 1300px) {
-    div#section div.groupEdward div.sectionBox div.edwardFace {
+    div#seccion div.grupoUno div.cajaSeccion div.personaje1 {
         text-align: left;
         display: inline-block;
         margin-left: 55px;
     }
-    div#section div.groupEdward div.sectionBox div.text {
+    div#seccion div.grupoUno div.cajaSeccion div.texto {
         height: 300px;
         width: 842px;
         margin-right: 55px;
@@ -264,41 +265,41 @@ div#section div.groupEdward div.sectionBox div.text p {
         display: inline-block;
     }
 }
-div.groupArno div.sectionBox div.arnoFace {
+div.grupoDos div.cajaSeccion div.arnoFace {
     margin: 20px auto;
     border: 1px solid #000;
     width: 200px;
     height: 300px;
-    background: url(../imgs/Challenge_responsive/ArnoDorian.png) no-repeat center;
+    background: url(../imgs/iamgen\ 22.jpg) no-repeat center;
     background-size: contain;
     text-align: center;
     position: relative;
     border-radius: 5px;
 }
-div.groupArno div.sectionBox h1 {
+div.grupoDos div.cajaSeccion h1 {
     text-align: center;
 }
-div.groupArno div.sectionBox p {
+div.grupoDos div.cajaSeccion p {
     text-align: center;
 }
 @media(min-width: 720px) {
-    div.groupArno div.sectionBox div.arnoFace {
+    div.grupoDos div.cajaSeccion div.arnoFace {
         text-align: left;
         display: inline-block;
     }
-    div.groupArno div.sectionBox div.text {
+    div.grupoDos div.cajaSeccion div.texto {
         height: 300px;
         width: 527px;
         float: right;
         text-align: right;
         display: inline-block;
     }
-    /*div.#section div.groupEdward div.sectionBox h1 {
+    /*div.#seccion div.grupoUno div.cajaSeccion h1 {
         text-align: left
     }*/
 }
 @media (min-width: 1024px) {
-    div.groupArno div.sectionBox div.text {
+    div.grupoDos div.cajaSeccion div.texto {
         height: 300px;
         width: 805px;
         text-align: left;
@@ -306,12 +307,12 @@ div.groupArno div.sectionBox p {
     }
 }
 @media(min-width: 1300px) {
-    div.groupArno div.sectionBox div.arnoFace {
+    div.grupoDos div.cajaSeccion div.arnoFace {
         text-align: left;
         display: inline-block;
         margin-left: 55px;
     }
-    div.groupArno div.sectionBox div.text {
+    div.grupoDos div.cajaSeccion div.texto {
         height: 300px;
         width: 842px;
         margin-right: 55px;
