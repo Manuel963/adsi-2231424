@@ -1,0 +1,322 @@
+* {
+    transition: all 1s ease-out;
+}
+.container {
+    margin: 0px;
+    background-color: #F6F6F6;
+}
+div.header {
+    margin: 5px auto;
+    padding: 0;
+}
+div.logoAc {
+    margin: 20px -84px;
+    text-align: center;
+    transform: scale(.5);
+}
+@media (min-width: 720px) {
+    div.logoAc {
+        transform: scale(.8)
+    }
+}
+@media (min-width: 1024px) {
+    div.logoAc {
+        transform: scale(1)
+    }
+}
+div.images div.altair {
+    margin: 20px auto;
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    background: url(../imgs/Challenge_responsive/altair.png) no-repeat center;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+div.images div.altair div.boxheader {
+    height: 50px;
+    border: 1px solid #000;
+    z-index: 1;
+    margin-top: 248px;
+    background-color: #000;
+    opacity: .8;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    margin: 248px -100px;
+    width: 198px;
+}
+div.images div.altair div.boxheader a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1em;
+    z-index: 2;
+}
+div.images div.altair div.boxheader:hover {
+    transition: all 1s ease-in;
+    height: 100px;
+    margin-top: 198px;
+    line-height: 6em;
+}
+div.images div.ezio {
+    margin: 20px auto;
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    background: url(../imgs/Challenge_responsive/Ezio_AC2.png) no-repeat center;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+div.images div.ezio div.boxheader {
+    height: 50px;
+    border: 1px solid #000;
+    z-index: 1;
+    margin-top: 248px;
+    background-color: #000;
+    opacity: .8;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    margin: 248px -100px;
+    width: 198px;
+}
+div.images div.ezio div.boxheader a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1em;
+    z-index: 2;
+}
+div.images div.ezio div.boxheader:hover {
+    transition: all .5s ease-in;
+    height: 100px;
+    margin-top: 198px;
+    line-height: 6em;
+}
+div.images div.connor {
+    margin: 20px auto;
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    background: url(../imgs/Challenge_responsive/connor.png) no-repeat center;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+div.images div.connor div.boxheader {
+    height: 50px;
+    border: 1px solid #000;
+    z-index: 1;
+    margin-top: 248px;
+    background-color: #000;
+    opacity: .8;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    margin: 248px -100px;
+    width: 198px;
+}
+div.images div.connor div.boxheader a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1em;
+    z-index: 2;
+}
+div.images div.connor div.boxheader:hover {
+    transition: all .5s ease-in;
+    height: 100px;
+    margin-top: 198px;
+    line-height: 6em;
+}
+div.images div.edward {
+    margin: 20px auto;
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    background: url(../imgs/Challenge_responsive/EdwardOne.png) no-repeat center;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+div.images div.edward div.boxheader {
+    height: 50px;
+    border: 1px solid #000;
+    z-index: 1;
+    margin-top: 248px;
+    background-color: #000;
+    opacity: .8;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    margin: 248px -100px;
+    width: 198px;
+}
+div.images div.edward div.boxheader a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 1em;
+    z-index: 2;
+}
+div.images div.edward div.boxheader:hover {
+    transition: all .5s ease-in;
+    height: 100px;
+    margin-top: 198px;
+    line-height: 2em;
+}
+@media (min-width: 720px) {
+    div.images div.altair, div.images div.ezio, div.images div.connor, div.images div.edward {
+        display: inline-block;
+        margin: 10px 69px;
+        text-align: center;
+        margin-top: 100px
+    }
+}
+@media (min-width: 1024px) {
+    div.images div.altair, div.images div.ezio, div.images div.connor, div.images div.edward {
+        display: inline-block;
+        margin: 10px 23px;
+        text-align: center;
+        position: relative;
+        margin-top: 100px;
+    }
+}
+@media (min-width: 1300px) {
+    div.images {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    div.images div.altair, div.images div.ezio, div.images div.connor, div.images div.edward {
+        display: inline-block;
+        margin: 10px 55px;
+        text-align: center;
+        position: relative;
+    }
+    div.images div.altair div.boxheader:hover, div.images div.ezio div.boxheader:hover, div.images div.ezio div.boxheader:hover, div.images div.edward div.boxheader:hover {
+        transition: all 1s ease-in;
+        height: 100px;
+        /margin-top: 100px;/
+        line-height: 6em;
+    }
+}
+/* ==================================================================== */
+
+div#section div.group div.sectionBox {
+    margin: 20px auto;
+    display: block;
+    font-family: Arial;
+    text-align: center;
+}
+div#section div.groupEdward div.sectionBox div.edwardFace {
+    margin: 20px auto;
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    background: url(../imgs/Challenge_responsive/EdwardTwo.png) no-repeat center;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+div#section div.groupEdward div.sectionBox div.text h1 {
+    text-align: center;
+}
+div#section div.groupEdward div.sectionBox div.text p {
+    text-align: center;
+}
+@media(min-width: 720px) {
+    div#section div.groupEdward div.sectionBox div.edwardFace {
+        text-align: left;
+        display: inline-block;
+    }
+    div#section div.groupEdward div.sectionBox div.text {
+        height: 300px;
+        width: 527px;
+        float: right;
+        /text-align: right;/
+        display: inline-block;
+    }
+}
+@media (min-width: 1024px) {
+    div#section div.groupEdward div.sectionBox div.text {
+        height: 300px;
+        width: 805px;
+        text-align: left;
+        display: inline-block;
+    }
+}
+@media (min-width: 1300px) {
+    div#section div.groupEdward div.sectionBox div.edwardFace {
+        text-align: left;
+        display: inline-block;
+        margin-left: 55px;
+    }
+    div#section div.groupEdward div.sectionBox div.text {
+        height: 300px;
+        width: 842px;
+        margin-right: 55px;
+        float: right;
+        text-align: right;
+        display: inline-block;
+    }
+}
+div.groupArno div.sectionBox div.arnoFace {
+    margin: 20px auto;
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    background: url(../imgs/Challenge_responsive/ArnoDorian.png) no-repeat center;
+    background-size: contain;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+div.groupArno div.sectionBox h1 {
+    text-align: center;
+}
+div.groupArno div.sectionBox p {
+    text-align: center;
+}
+@media(min-width: 720px) {
+    div.groupArno div.sectionBox div.arnoFace {
+        text-align: left;
+        display: inline-block;
+    }
+    div.groupArno div.sectionBox div.text {
+        height: 300px;
+        width: 527px;
+        float: right;
+        text-align: right;
+        display: inline-block;
+    }
+    /*div.#section div.groupEdward div.sectionBox h1 {
+        text-align: left
+    }*/
+}
+@media (min-width: 1024px) {
+    div.groupArno div.sectionBox div.text {
+        height: 300px;
+        width: 805px;
+        text-align: left;
+        display: inline-block;
+    }
+}
+@media(min-width: 1300px) {
+    div.groupArno div.sectionBox div.arnoFace {
+        text-align: left;
+        display: inline-block;
+        margin-left: 55px;
+    }
+    div.groupArno div.sectionBox div.text {
+        height: 300px;
+        width: 842px;
+        margin-right: 55px;
+        float: right;
+        text-align: right;
+        display: inline-block;
+    }
+}
