@@ -1,0 +1,8 @@
+doctype
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		title challenge
+	body
+			each val, index in ['250,250,250', '245,245,245', '238,238,238', '189,189,189', '158,158,158', '117,117,117', '97,97,97', '66,66,66', '33,33,33', '0,0,0']
+				div(style={'background-color': 'rgb('+val+')', height: '60px','text-indent': '-9999px',})= index
