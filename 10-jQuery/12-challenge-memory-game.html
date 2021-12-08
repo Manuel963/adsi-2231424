@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        
+        h2.title-game {
+            background: transparent url(images/memory-game/2ndanniversary_hero\ 1.png) no-repeat 0px center;
+            font-size: 50px;
+            font-family: roboto;
+            text-align: center;
+            margin: 0 auto;
+            text-indent: 100px;
+            width: 500px;
+        }
+        hr {
+            border-width: 0px;
+            background-color: #838383;
+            height: 4px;
+            margin: 20px 0px;
+        }
+        figure {
+            margin: 0px auto;
+            width: 780px;
+            background: url(images/memory-game/fondo\ 222.png) no-repeat 0px center;
+        }
+        div.moves,
+        div.time,
+        div.fmoves,
+        div.ftime {
+            color: #838383;
+            display: inline-block;
+            font-size: 24px;
+            font-family: Poppins;
+            padding-left: 50px;
+            
+        }
+        div.moves,
+        div.fmoves {
+            *background: transparent url(images/memory-game/icon-moves.svg) no-repeat 0px center;
+            background: transparent url(images/kazuma.png) no-repeat 0px center;
+            margin-right: 40px;
+        }
+        div.time,
+        div.ftime
+        {
+            *background: transparent url(images/memory-game/icon-time.svg) no-repeat 0px center;
+            background: transparent url(images/theWitcher.jpg) no-repeat 0px center;
+            margin-bottom: 20px;
+        }
+        div.card {
+            display: inline-block;
+            height: 194px;
+            margin: 13px;
+            transition: transform 1s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            position: relative;
+            width: 164px;
+        }
+        div.card.is-flipped {
+            transform: rotateY(180deg);
+        }
+        div.card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        div.card-face-front {
+            background: transparent url(images/memory-game/rey\ 1.png) no-repeat center;
+            background-size: contain;
+        }
+        div.card-face-back {
+            transform: rotateY(180deg);
+        }
+
+         div div.card-face-back {
+            background: transparent url(images/kazuma.png) no-repeat center;
+            background-size: contain;
+        } /**/
+
+        div.card01 div.card-face-back {
+            background: transparent url(images/memory-game/1.png) no-repeat center;
+        
+            background-size: contain;
+        }
+        div.card02 div.card-face-back {
+            background: transparent url(images/memory-game/2.png) no-repeat center;
+            background-size: contain;
+        }
+        div.card03 div.card-face-back {
+            background: transparent url(images/memory-game/3.png) no-repeat center;
+            background-size: contain;
+        }
+        div.card04 div.card-face-back {
+            background: transparent url(images/memory-game/4.png) no-repeat center;
+            background-size: contain;
+        }
+        div.card05 div.card-face-back {
+            background: transparent url(images/memory-game/5.png) no-repeat center;
+        
+            background-size: contain;
+        }
+        div.card06 div.card-face-back {
+            background: transparent url(images/memory-game/6.png) no-repeat center;
+        
+            background-size: contain;
+        }
+        div.modal.hide{
+            display: none;
+        }
+        div.modal{
+            background-color:#000000cc;
+            height: 100vh;
+            position: fixed;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 9;
+        }
+        div.modal div.data{
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 40px;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+        }
+        div.modal div.data h4{
+            text-align: center;
+            font-family: Robotto;
+            font-size: 2rem;
+            margin: 0px;
+        }
+        div.modal div.data input{
+            border: 1px solid #838383;
+            margin: 0px auto;
+            display: block;
+            padding: 14px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.2rem;
+            color: #838383;
+            outline: none;
+            border-radius: 10px;
+            text-align: center;
+        }
+        div.modal div.data button{
+            background-color: #838383;
+            margin: 0px auto;
+            display: block;
+            border: none;
+            border-radius: 10px;
+            color: #fff;
+            padding: 18px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1> <span><a href="index.html">&larr;</a></span> Memory Game</h1>
+        </header>
+        <section>
+            <div class="modal hide">
+                <div class="data">
+                    <h4>well Done¡</h4>
+                    <hr>
+                    <div class="fmoves">0 moves</div>
+                    <div class="ftime">0 seconds</div>
+                    <input type="text" id="username" placeholder="Enter Username">
+                    <button>save</button>
+                </div>
+            </div>
+            <div class="logo"></div>
+            <h2 class="title-game">Matching Game</h2>
+            <figure>
+                <hr>
+                <div class="moves">0 moves</div>
+                <div class="time">0 seconds</div>
+                <br>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>
+                <div class="card">
+                    <div class="card-face card-face-front"></div>
+                    <div class="card-face card-face-back"></div>
+                </div>   
+            </figure>
+        </section>
+    </main>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $time = 0;
+            $cntMoves = 0;
+            $cntClicks = 0;
+            $cntMatch = 0;
+            $cards  = document.querySelectorAll('div.card');
+            $ccards = ['card01', 'card01', 'card02', 'card02',
+                      'card03', 'card03', 'card04', 'card04',
+                      'card05', 'card05', 'card06', 'card06'];
+
+            $('.card').click(function() {
+                if (!$(this).hasClass('active')){
+                    $(this).addClass('is-flipped active');
+                    $cntClicks++;
+                    if($cntClicks == 1){
+                        $card1 = $(this);
+                    }
+                    else{
+                        $card2 = $(this);
+                        $cntClicks = 0;
+                        checkMatch();
+                    }
+                }
+            });
+            $('#btnsave').click(function() {
+                let gamer ={
+                    username :$('#username').val(),
+                    moves    : $cntMoves,
+                    time     :$time,
+                };
+                let userGamer = JSON.stringify(gamer);
+                localStorage.setItem("gamer", userGamer);
+                $('.modal').addClass('hide');
+                setTimeout(function(){
+                    windows.location.replace("12-challenge-memory-game.html");
+                },1000);
+            });
+            const checkMatch = () => {
+                if($card1.attr('class').substring(5,12) == $card2.attr('class').substring(5,12)){
+                    alert('Match');
+                    $cntMatch++;
+                    if($cntMatch==6){
+                        showresult();
+                        clearInterval($setInt);
+                        setTimeout(function(){
+                            alert("End Game... congratulations");
+                        }, 1000);
+                    }
+                }else{
+                    setTimeout(function(){
+                        $card1.removeClass('is-flipped active');
+                        $card2.removeClass('is-flipped active');
+                    }, 1000);
+                }
+                $cntMoves++;
+                $('.moves').text($cntMoves + ' moves');
+                console.log($('.card'));
+            }
+            
+            const showresult=()=>{
+                $('.fmoves').text($cntMoves + "moves");
+                $('.ftime').text($time + "seconds");
+                $('.modal').removeClass('hide');
+            }
+           
+           
+            const getTime = () => {
+                setInt = setInterval(function(){
+                    $time++;
+                    $('.time').text($time + ' seconds');
+                }, 1000);
+            }
+
+            const randomCard = () => {
+                for (let i = 0; i < $cards.length; i++) {
+                    $($cards[i]).addClass(randomBg());
+                }
+            }
+
+            const randomBg = () => {
+                $rn = Math.floor(Math.random() * $ccards.length );
+                $bg = $ccards[$rn];
+                $ccards.splice($rn,1);
+                return $bg;
+            }
+
+            randomCard();
+            getTime();
+        });
+        
+    </script>
+    
+</body>
+</html>
